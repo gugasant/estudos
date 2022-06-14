@@ -1,0 +1,40 @@
+programa {
+	funcao inicio() {
+		caracter nome, endereco, cidade, pai, mae
+		inteiro idade, cpf, rg
+		real peso, renda
+		
+		escreva("Informe seu nome: ")
+		leia(nome)
+		escreva("Endereço: ")
+		leia(endereco)
+		escreva("Cidade: ")
+		leia(cidade)
+		escreva("CPF: ")
+		leia(cpf)
+		escreva("RG: ")
+		leia(rg)
+		escreva("Idade: ")
+		leia(idade)
+		escreva("Nome do pai: ")
+		leia(pai)
+		escreva("Nome da mãe: ")
+		leia(mae)
+		escreva("Seu peso: ")
+		leia(peso)
+		escreva("Renda bruta: ")
+		leia(renda)
+		
+		escreva(nome, "\n")
+		escreva(endereco, "\n")
+		escreva(cidade, "\n")
+		escreva(cpf, "\n")
+		escreva(rg, "\n")
+		escreva(idade, "\n")
+		escreva(pai, "\n")
+		escreva(mae, "\n")
+		escreva(peso, "\n")
+		escreva(renda)
+		
+	}
+}
