@@ -1,0 +1,198 @@
+programa {
+	funcao inicio() {
+
+		caracter varterra
+		caracter vartrator
+		caracter vartrem
+		caracter varbicicleta
+		caracter varmoto
+		caracter varcaminhao
+		caracter varonibus
+		caracter varaereo
+		caracter varasa
+		caracter varaviao
+		caracter varhelicoptero
+		caracter varaquatico
+		caracter varsubmarino
+		caracter varbarco
+		caracter varnavio
+		                                                                                                                                                                                     //juliana B.
+	
+		escreva("responda com s para sim e n para não \n")
+		
+		escreva("é terrestre? ")
+		leia(varterra)
+		escolha(varterra){
+		    
+			caso 's':
+			escreva("possui trilhos? ")
+			leia(vartrem)
+			  escolha(vartrem){
+			        
+			        caso 's':
+			        escreva ("é um Trem")
+			        
+			        pare
+			        
+			        caso 'n':
+			        escreva ("possui motor? ")
+			        leia(varbicicleta)
+			        
+			            escolha(varbicicleta){
+			                
+			                caso 's':
+			                escreva("cabe no máximo duas pessoas? ")
+			                leia(varmoto)
+			                
+			                escolha(varmoto){
+			                                                                                                                                                                                  //Juliana B.
+			                    caso 's':
+			                    escreva("é uma moto")
+			                    
+			                    pare
+			                    
+			                    caso 'n':
+			                    escreva("é usado para transporte de cargas? ")
+			                    leia(varcaminhao)
+			                    
+			                    escolha(varcaminhao){
+			                        
+			                        caso 's':
+			                        escreva("é um caminhão")
+			                        
+			                        pare
+			                        
+			                        caso 'n':
+			                        escreva("pode ter cobrador? ")
+			                        leia(varonibus)
+			                        
+			                        escolha(varonibus){
+			                            
+			                            caso 's':
+			                            escreva("é um ônibus")
+			                            
+			                            pare
+			                            
+			                            caso 'n':
+			                            escreva("é usado para obras? ")                                                                                                                                                                                //Juliana
+			                            leia(vartrator)
+			                            
+			                            escolha(vartrator){
+			                                                                                                                                                                                                                     //Juliana B.
+			                                caso 's':
+			                                escreva("é um trator")
+			                                
+			                                pare
+			                                
+			                                caso 'n':
+			                                escreva("é um carro")
+			                            }pare
+			                        }pare
+			                    }pare
+			                }pare
+			                
+			                caso 'n':
+			                escreva("é uma bicicleta")
+			            }pare
+			    }pare
+			
+			caso 'n':
+			escreva("é aéreo? ")
+			leia(varaereo)
+			                                                                                                                                                                                      //Juliana B.
+			escolha(varaereo){
+			    
+				caso 's':
+				escreva("precisa pular? ")
+				leia(varasa)
+				
+				escolha(varasa){
+				    
+				    caso 's':
+				    escreva("é uma asa delta")
+				    
+				    pare
+				                                                                                                                                                                     //Juliana B
+				    caso 'n':
+				    escreva("tem hélices? ")
+				    leia(varhelicoptero)
+				    
+				    escolha(varhelicoptero){
+				        
+				        caso 's':
+				        escreva("é um helicóptero")
+				        
+				        pare
+				        
+				        caso 'n':
+				        escreva("tem asas? ")
+				        leia(varaviao)
+				        
+				        escolha(varaviao){
+				            
+				            caso 's':
+				            escreva("é um avião")
+				            
+				            pare
+				                                                                                                                                                                          //Juliana B.
+				            caso 'n':
+				            escreva("é um balão")
+				            
+				        }pare
+				        
+				    }pare
+				    
+				}pare                                                                                                                                                                        //Juliana B.
+				
+				caso 'n':
+				escreva("é aquático? ")
+				leia(varaquatico)
+				
+				escolha(varaquatico){
+				    
+				    caso 's':
+				    escreva("é coberto de água? ")
+				    leia(varsubmarino)
+				    
+				    escolha(varsubmarino){
+				        
+				        caso 's':
+				        escreva("é um submarino")
+				        
+				        pare
+				        
+				        caso 'n':
+				        escreva("pode ser um cruzeiro? ")
+				        leia(varnavio)
+				        
+				        escolha(varnavio){
+				            
+				            caso 's':
+				            escreva("é um navio")
+				            
+				            pare
+				            
+				            caso 'n':
+				            escreva("possui vela ?")
+				            leia(varbarco)
+				            
+				            escolha(varbarco){
+				               
+				               caso 's':
+				               escreva("é um barco")
+				               
+				               pare
+				               
+				               caso 'n':
+				               escreva("é uma lancha")
+				                
+				            }pare
+				        }pare
+				        
+				    }pare
+				    
+				}pare
+			}
+		}
+	}
+}
