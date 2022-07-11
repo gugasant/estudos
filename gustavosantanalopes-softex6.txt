@@ -13,7 +13,7 @@ repita
 
 	escolha turma
 
-   		caso A
+   		caso "A"
 			
 			aprovadosTurmaA <- 0
 			maiorNotaTurmaA <- 0
@@ -42,7 +42,7 @@ repita
 
 			contador <- contador + 1
 
-   		caso B
+   		caso "B"
 
 			aprovadosTurmaB <- 0
 			maiorNotaTurmaB <- 0
@@ -71,7 +71,7 @@ repita
 
 			contador <- contador + 1
 
-   		caso C
+   		caso "C"
 
 			aprovadosTurmaC <- 0
 			maiorNotaTurmaC <- 0
@@ -100,7 +100,7 @@ repita
 
 			contador <- contador + 1
 
-   		caso D
+   		caso "D"
 
 			aprovadosTurmaD <- 0
 			maiorNotaTurmaD <- 0
