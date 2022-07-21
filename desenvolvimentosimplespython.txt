@@ -1,0 +1,15 @@
+nome_aluno = "gustavo"
+nota1 = 7
+nota2 = 7
+faltas = 2
+media = nota1 + nota2 / 2
+
+if media >= 7:
+  print(nome_aluno, "está aprovado por média")
+else:
+  print(nome_aluno, "está reprovado por média")
+
+if faltas >= 3:
+  print(nome_aluno, "está reprovado por faltas")
+else:
+  print(nome_aluno, "está aprovado no critério presença")
