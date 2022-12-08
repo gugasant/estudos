@@ -1,0 +1,10 @@
+Faça um projeto explicando como funcionam os métodos HTTP com exemplos de requisições, sua utilização e em qual momento cada um dos métodos devem ser utilizados. 
+Além disso, descreva o que é WSDL, seu significado e sua função.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+------------------------------------------------------------------------------------------------------------
+
+WSDL significa Web Services Description Language. É o formato padrão para descrever um serviço da web. WSDL foi desenvolvido em conjunto pela Microsoft e IBM.
+WSDL é um protocolo baseado em XML para troca de informação em ambientes distribuídos e descentralizados. As definições descrevem como acessar um web service e quais operações vai performar. WSDL é uma linguagem que descreve interfaces de serviçoes baseados em XML, além de ser a linguagem que a UDDI(Universal Description, Discovery, and Integration) usa.
+WSDL é frequentemente usado em combinação com SOAP e XML Schema para fornecer serviços da Web pela Internet. Um programa cliente conectado a um serviço da Web pode ler o WSDL para determinar quais funções estão disponíveis no servidor. Quaisquer tipos de dados especiais usados ​​são incorporados no arquivo WSDL na forma de Esquema XML. O cliente pode então usar o SOAP para realmente chamar uma das funções listadas no WSDL.

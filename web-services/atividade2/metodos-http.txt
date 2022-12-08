@@ -1,0 +1,18 @@
+Faça um projeto explicando como funcionam os métodos HTTP com exemplos de requisições, sua utilização e em qual momento cada um dos métodos devem ser utilizados. 
+Além disso, descreva o que é WSDL, seu significado e sua função.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+------------------------------------------------------------------------------------------------------------
+
+O protocolo HTTP(Hypertext Transfer Protocol) possui 9 métodos de requisição que indicam a ação a ser executada para um dado recurso, esses métodos também são chamados verbos HTTP, são eles: GET, POST, HEAD, PUT, DELETE, CONNECT, OPTIONS, TRACE e PATCH.
+
+GET - O método GET solicita a representação de um recurso específico. Requisições utilizando o método GET devem retornar apenas dados.
+HEAD - O método HEAD solicita uma resposta de forma idêntica ao método GET, porém sem conter o corpo da resposta.
+POST - O método POST é utilizado para submeter uma entidade a um recurso específico, frequentemente causando uma mudança no estado do recurso ou efeitos colaterais no servidor.
+PUT - O método PUT substitui todas as atuais representações do recurso de destino pela carga de dados da requisição.
+DELETE - O método DELETE remove um recurso específico.
+CONNECT - O método CONNECT estabelece um túnel para o servidor identificado pelo recurso de destino.
+OPTIONS - O método OPTIONS é usado para descrever as opções de comunicação com o recurso de destino.
+TRACE - O método TRACE executa um teste de chamada loop-back junto com o caminho para o recurso de destino.
+PATCH - O método PATCH é utilizado para aplicar modificações parciais em um recurso.
