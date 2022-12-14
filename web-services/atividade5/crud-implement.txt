@@ -1,0 +1,4 @@
+Faça um código para implementar o CRUD de algum recurso. Por exemplo: alunos, equipamentos ou vendas. Aponte as rotas e os retornos do status HTTP.
+
+O mesmo da atividade4:
+https://github.com/gugasant/estudos/blob/main/web-services/atividade4/server.js
