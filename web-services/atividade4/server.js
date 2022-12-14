@@ -13,7 +13,7 @@ app.get("/livros/:id", function(req, res) {
     const { id } = req.params;
     const livro = data.find(liv => liv.id == id);
 
-    if(!client) return res.status(204).json();
+    if(!livro) return res.status(204).json();
 
     res.json(livro);
 });
