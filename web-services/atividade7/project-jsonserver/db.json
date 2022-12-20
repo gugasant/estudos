@@ -1,0 +1,64 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Kill Bill - Volume 1",
+      "ano": 2003,
+      "diretor": "Quentin Tarantino",
+      "generoId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "O lobo de Wall Street",
+      "ano": 2013,
+      "diretor": "Martin Scorsese",
+      "generoId": 2
+    },
+    {
+      "id": 3,
+      "titulo": "2001 - Uma Odisséia no Espaço",
+      "ano": 1968,
+      "diretor": "Stanley Kubrick",
+      "generoId": 3
+    },
+    {
+      "id": 4,
+      "titulo": "Cães de Aluguel",
+      "ano": 1992,
+      "diretor": "Quentin Tarantino",
+      "generoId": 1
+    },
+    {
+      "id": 5,
+      "titulo": "Taxi Driver",
+      "ano": 1976,
+      "diretor": "Martin Scorsese",
+      "generoId": 2
+    },
+    {
+      "id": 6,
+      "titulo": "O Iluminado",
+      "ano": 1980,
+      "diretor": "Stanley Kubrick",
+      "generoId": 4
+    }
+  ],
+  "generos": [
+    {
+        "id": 1,
+        "tipo": "Ação"
+    },
+    {
+        "id": 2,
+        "tipo": "Drama"
+    },
+    {
+        "id": 3,
+        "tipo": "Ficção Científica"
+    },
+    {
+        "id": 4,
+        "tipo": "Suspense"
+    }
+  ]
+}
