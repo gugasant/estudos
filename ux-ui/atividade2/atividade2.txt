@@ -1,0 +1,9 @@
+Uma forma de descobrir as causas de um determinado problema do dia dia de uma empresa, como identificação e resolução de problemas de manutenção, qualidade, produção e áreas administrativas, entre outros é utilizando a técnica do 5 porquês. No caso específico podemos fazer da segguinte forma:
+Definição do problema - A maioria dos usuários do serviço não responde o questionário da pesquisa Net Promoter Score (NPS) para avaliar o nível de satisfação dos clientes em relação aos seus serviços.
+Por que? Porque a pesquisa é chata
+Por que? Porque é demorada
+Por que? Porque tem muitas perguntas
+Por que? Porque tenta avaliar muita coisa de uma vez
+Por que? Porque...
+
+Quando realmente encontramos a causa raiz é que podemos eliminar o problema e a simples ação de utilizar os 5 porques para melhorar os resultados drasticamente em termos de produtividade pessoal e de times no trabalho reduzindo o tempo que as pessoas gastam para lidar com os problemas.
