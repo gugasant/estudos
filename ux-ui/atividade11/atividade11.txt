@@ -1,0 +1,6 @@
+Exemplo: Realizar um PIX no app de um banco digital.
+- Facilidade de aprendizado: Qual o grau de facilidade do uso da Interface de PIX no app.
+- Eficiência de uso: Se a interface tem eficiência para permitir que o usuário consiga realizar um ou mais PIX.
+- Facilidade de memorização: Se os caminhos para realizar um PIX nesta interface são fáceis de memorizar, ou seja, se depois de uma primeira ou segunda vez já é possível encontrar o caminho para a tarefa de forma fácil.
+- Erros: Analisar os casos em que os usuários cometem erros ao tentar utilizar a interface do PIX, se é difícil resolvê-los ou revertê-los.
+- Satisfação: Observar se a interface de transferência via PIX do app do banco é agradável ao usuário.
