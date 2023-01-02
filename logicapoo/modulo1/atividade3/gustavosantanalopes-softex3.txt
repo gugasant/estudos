@@ -1,0 +1,18 @@
+variáveis: nome, cpf, rg, altura, endereco
+
+nome: caracter
+cpf: inteiro
+rg: inteiro
+altura: real
+endereco: caracter
+
+nome <- Jose Almeida da Silva
+cpf <- 12345678900
+rg <- 9517530
+altura <- 1,78
+endereco <- Rua A 380 centro recife pe
+
+
+
+
+

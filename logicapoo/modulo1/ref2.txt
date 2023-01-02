@@ -1,0 +1,26 @@
+Referências fora de atividade.
+
+Lógica Imperativa
+
+Compreender o raciocínio lógico para resolução de problemas usando apenas V ou F
+
+BAUDSON, Adolfo José; ARAÚJO, Francisco César. Algoritmos e Programação. Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais, 2013. Disponível em: https://www.ifmg.edu.br/ceadop3/apostilas/algoritmos-e-programacao. Acesso em: 19 abr. 2022.
+
+ 
+
+BÓSON TREINAMENTOS. 09 - Lógica de Programação - Operadores e Expressões Lógicas.[s/d]. Disponível em: https://www.youtube.com/watch?v=G8haXi-EgSc&t=119s  . Acesso em: 19 abr. 2022.
+
+
+CURSO EM VÍDEO. Operadores Lógicos e Relacionais - Curso de Algoritmos #04 - Gustavo Guanabara. [s/d]. Disponível em: https://www.youtube.com/watch?v=Ig4QZNpVZYs&t=366s . Acesso em: 19 abr. 2022.
+
+ALVES, Gustavo. Conheça os operadores lógicos!. Dicas de Programação, [s/d]. Disponível em: https://dicasdeprogramacao.com.br/operadores-logicos/ . Acesso em: 19 abr. 2022.
+
+ 
+
+ALVES, William Pereira. Linguagem e lógica de programação. São Paulo: Érica, 2014.
+
+ 
+
+FORBELLONE, André Luiz Villar. Lógica de programação: A construção de algoritmos e estruturas de dados. 3 ed. São Paulo: Pearson Prentice Hall, 2005.
+
+MORATTA, Mylena Cristina. Expressões Lógicas: Operadores Lógicos e Tabela-verdade. 12 slides. eduCAPES, [s/d].  Disponível em: https://educapes.capes.gov.br/bitstream/capes/597818/2/Express%C3%B5es%20L%C3%B3gicas%20-%20Operadores%20L%C3%B3gicos%20e%20Tabela-verdade.pdf  . Acesso em: 19 abr. 2022.

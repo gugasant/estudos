@@ -1,0 +1,31 @@
+Referências fora de atividade.
+
+Lógica Imperativa
+
+Algoritmos: conceito e funções
+
+BBC NEWS BRASIL. O que são os algoritmos e como eles aprendem com você. 8 mai. 2021. Disponível em: https://www.youtube.com/watch?v=nj22l1gIll8 . Acesso em: 18 abr. 2022.
+
+ 
+
+DE PIERRO, Bruno.O mundo mediado por algoritmos. Pesquisa FAPESP, abr. 2018. Disponível em:  https://revistapesquisa.fapesp.br/o-mundo-mediado-por-algoritmos/. Acesso em: 18 abr. 2022.
+
+ 
+
+KHAN ACADEMY. Unidade: Algoritmos. [s/d]. Disponível em:  https://pt.khanacademy.org/computing/computer-science/algorithms. Acesso em: 18 abr. 2022.
+
+ALVES, Gustavo.O que é algoritmo?. Dicas de programação, [s/d]. Disponível em:  https://dicasdeprogramacao.com.br/o-que-e-algoritmo/. Acesso em: 18 abr. 2022.
+
+ 
+
+ALVES, William Pereira. Linguagem e lógica de programação. São Paulo: Érica, 2014.
+
+ 
+
+DEVMEDIA. Noções básicas de algoritmo. [s/d]. Disponível em:  https://www.devmedia.com.br/nocoes-basicas-de-algoritmo/26405. Acesso em: 18 abr. 2022.
+
+FORBELLONE, André Luiz Villar; EBERSPÄCHER, Henri Frederico. Lógica de programação: A construção de algoritmos e estruturas de dados. 3 ed. São Paulo: Pearson Prentice Hall, 2005.
+
+ 
+
+GARRETT, Filipe. O que é algoritmo? Entenda como funciona em apps e sites da Internet. Techtudo, 14 mai. 2020. Disponível em:  https://www.techtudo.com.br/listas/2020/05/o-que-e-algoritmo-entenda-como-funciona-em-apps-e-sites-da-internet.ghtml. Acesso em: 18 abr. 2022.

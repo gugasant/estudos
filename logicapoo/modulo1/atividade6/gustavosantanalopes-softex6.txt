@@ -1,0 +1,215 @@
+Variáveis:
+nomeMaiorNotaTurmaA, nomeMaiorNotaTurmaB, nomeMaiorNotaTurmaC, nomeMaiorNotaTurmaD, alunoMaiorNota, turmaMaiorNota, nomeAluno, turma: caracter
+aprovadosTurmaA, aprovadosTurmaB, aprovadosTurmaC, aprovadosTurmaD, somaAprovados, contador: inteiro
+maiorNotaTurmaA, maiorNotaTurmaB, maiorNotaTurmaC, maiorNotaTurmaD, nota: real
+  
+Inicio:
+contador <- 1
+
+repita
+
+	escreva("Qual a turma do aluno? A, B, C ou D: ")
+	leia(turma)
+
+	escolha turma
+
+   		caso "A"
+			
+			aprovadosTurmaA <- 0
+			maiorNotaTurmaA <- 0
+
+			para i de 1 até 25 passo 1 faca
+      			
+				escreva("Nome do aluno: ")
+				leia(nomeAluno)
+				escreva("Nota do aluno: ")
+				leia(nota)
+				
+				se nota >= 7 entao
+					
+					aprovadosTurmaA <- aprovadosTurmaA + 1
+					
+				fimse
+
+				se nota > maiorNotaTurmaA entao
+
+					nomeMaiorNotaTurmaA <- nomeAluno
+					maiorNotaTurmaA <- nota
+
+				fimse
+				
+			fimpara
+
+			contador <- contador + 1
+
+   		caso "B"
+
+			aprovadosTurmaB <- 0
+			maiorNotaTurmaB <- 0
+
+			para i de 1 até 25 passo 1 faca
+      			
+				escreva("Nome do aluno: ")
+				leia(nomeAluno)
+				escreva("Nota do aluno: ")
+				leia(nota)
+				
+				se nota >= 7 entao
+					
+					aprovadosTurmaB <- aprovadosTurmaB + 1
+					
+				fimse
+
+				se nota > maiorNotaTurmaB entao
+
+					nomeMaiorNotaTurmaB <- nomeAluno
+					maiorNotaTurmaB <- nota
+
+				fimse
+				
+			fimpara
+
+			contador <- contador + 1
+
+   		caso "C"
+
+			aprovadosTurmaC <- 0
+			maiorNotaTurmaC <- 0
+
+			para i de 1 até 25 passo 1 faca
+      			
+				escreva("Nome do aluno: ")
+				leia(nomeAluno)
+				escreva("Nota do aluno: ")
+				leia(nota)
+				
+				se nota >= 7 entao
+					
+					aprovadosTurmaC <- aprovadosTurmaC + 1
+					
+				fimse
+
+				se nota > maiorNotaTurmaC entao
+
+					nomeMaiorNotaTurmaC <- nomeAluno
+					maiorNotaTurmaC <- nota
+
+				fimse
+				
+			fimpara
+
+			contador <- contador + 1
+
+   		caso "D"
+
+			aprovadosTurmaD <- 0
+			maiorNotaTurmaD <- 0
+
+			para i de 1 até 25 passo 1 faca
+      			
+				escreva("Nome do aluno: ")
+				leia(nomeAluno)
+				escreva("Nota do aluno: ")
+				leia(nota)
+				
+				se nota >= 7 entao
+					
+					aprovadosTurmaD <- aprovadosTurmaD + 1
+					
+				fimse
+
+				se nota > maiorNotaTurmaD entao
+
+					nomeMaiorNotaTurmaD <- nomeAluno
+					maiorNotaTurmaD <- nota
+
+				fimse
+				
+			fimpara
+			
+			contador <- contador + 1
+			
+   		outrocaso
+
+      		escreva("Turma nao encontrada")
+
+		fimescolha
+
+ate (contador > 4)
+
+somaAprovados <- aprovadosTurmaA + aprovadosTurmaB + aprovadosTurmaC + aprovadosTurmaD
+
+se maiorNotaTurmaA > maiorNotaTurmaB entao
+
+	se maiorNotaTurmaC > maiorNotaTurmaD entao
+		
+		se maiorNotaTurmaA > maiorNotaTurmaC entao
+		
+			alunoMaiorNota <- nomeMaiorNotaTurmaA
+			turmaMaiorNota <- "A"
+		
+		senao
+
+			alunoMaiorNota <- nomeMaiorNotaTurmaC
+			turmaMaiorNota <- "C"
+
+		fimse
+		
+	senao
+
+		se maiorNotaTurmaA > maiorNotaTurmaD entao
+		
+			alunoMaiorNota <- nomeMaiorNotaTurmaA
+			turmaMaiorNota <- "A"
+		
+		senao
+
+			alunoMaiorNota <- nomeMaiorNotaTurmaD
+			turmaMaiorNota <- "D"
+
+		fimse
+
+	fimse
+
+senao
+
+	se maiorNotaTurmaC > maiorNotaTurmaD entao
+		
+		se maiorNotaTurmaB > maiorNotaTurmaC entao
+		
+			alunoMaiorNota <- nomeMaiorNotaTurmaB
+			turmaMaiorNota <- "B"
+		
+		senao
+
+			alunoMaiorNota <- nomeMaiorNotaTurmaC
+			turmaMaiorNota <- "C"
+
+		fimse
+		
+	senao
+
+		se maiorNotaTurmaB > maiorNotaTurmaD entao
+		
+			alunoMaiorNota <- nomeMaiorNotaTurmaB
+			turmaMaiorNota <- "B"
+		
+		senao
+
+			alunoMaiorNota <- nomeMaiorNotaTurmaD
+			turmaMaiorNota <- "D"
+
+		fimse
+
+	fimse
+	
+fimse
+
+escreval("Total de alunos aprovados: ", somaAprovados)
+escreval("Alunos aprovados na turma A: ", aprovadosTurmaA)
+escreval("Alunos aprovados na turma B: ", aprovadosTurmaB)
+escreval("Alunos aprovados na turma C: ", aprovadosTurmaC)
+escreval("Alunos aprovados na turma D: ", aprovadosTurmaD)
+escreval("O aluno com a maior nota: ", alunoMaiorNota)
+escreva("A turma do aluno com a maior nota: ", turmaMaiorNota)
+Fimalgoritmo

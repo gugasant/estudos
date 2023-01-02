@@ -1,6 +1,0 @@
-As cadeiras foram organizadas seguindo um padrão onde:
-Em cada linha e coluna há sempre 4 alunos que gostam de uma das duas disciplinas(P e M), e outros dois que preferem a outra.
-Quando o prefessor voltou, percebeu que, tanto na linha 5 como na coluna 5, havia um número igual dos alunos que gostam de Português e Matemática, 3 e 3.
-Então ele localizou na linha 5 e coluna 5, exatamente a posição que havia sido trocada.
-
-

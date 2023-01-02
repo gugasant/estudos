@@ -1,0 +1,33 @@
+BAUDSON, Adolfo José; ARAÚJO, Francisco César. Algoritmos e Programação. Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais, 2013. Disponível em: https://www.ifmg.edu.br/ceadop3/apostilas/algoritmos-e-programacao. Acesso em: 19 abr. 2022.
+
+ 
+
+CURSO EM VÍDEO. Estruturas Condicionais 1 - Curso de Algoritmos #07 - Gustavo Guanabara. [s/d]. Disponível em: https://www.youtube.com/watch?v=_g05aHdBAEY. Acesso em: 19 abr. 2022.
+
+ 
+
+CURSO EM VÍDEO. Estruturas Condicionais 2 - Curso de Algoritmos #08 - Gustavo Guanabara. [s/d]. Disponível em: https://www.youtube.com/watch?v=7gGFHzqh4d8&t=190s. Acesso em: 19 abr. 2022.
+
+LÉO ANDRADE. Aprenda a Programar - #06 Estruturas de Decisão I. 24 ago. 2020. Disponível em:https://www.youtube.com/watch?v=SblMEAmaczs . Acesso em: 19 abr. 2022.
+
+ 
+
+LÉO ANDRADE. Aprenda a Programar - #07 Estruturas de Decisão II. 14 set. 2020. Disponível em:https://www.youtube.com/watch?v=rmWU3GVFmB4 . Acesso em: 19 abr. 2022.
+
+ALVES, William Pereira. Linguagem e lógica de programação. São Paulo: Érica, 2014.
+
+ 
+
+FORBELLONE, André Luiz Villar. Lógica de programação: A construção de algoritmos e estruturas de dados. 3 ed. São Paulo: Pearson Prentice Hall, 2005.
+
+ 
+
+INSTITUTO FEDERAL DA BAHIA. Linguagens de programação estruturadas. 22 set. 2008. Disponível em:http://www.ifba.edu.br/fisica/nfl/Java/linguagemestruturada.html. Acesso em: 19 abr. 2022.
+
+SIQUEIRA, Fernando. Aula 3 - Estruturas de Controle. Prof. Fernando de Siqueira - Programacao Estruturada, [s/d]. Disponível em:
+
+https://sites.google.com/site/unipliprogramacaoestruturada/aulas/aula-3---estruturas-de-controle. Acesso em: 19 abr. 2022.
+
+ 
+
+RIBEIRO, Samuel. Java básico - Módulo 04: Estruturas de controle. 22 slides. Slide Share, 21 dez. 2015. Disponível em: https://pt.slideshare.net/professor.samuka/java-bsico-mdulo-04-estruturas-de-controle  . Acesso em: 19 abr. 2022.
