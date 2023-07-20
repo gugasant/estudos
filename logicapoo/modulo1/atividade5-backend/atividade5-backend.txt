@@ -1,5 +1,28 @@
+inteiro player1Pts, player2Pts, player3Pts, player4Pts, player1Coins, player2Coins, player3Coins, player4Coins
+logico player1Boss, player2Boss, player3Boss, player4Boss, player1, player2, player3, player4
 
-(V) Jogador 1: (120 >= 100) and (15 >= 5) and (enfrentou_chefe == Sim) // true
-(F) Jogador 2: (99 >= 100) and (200 >= 5) and (enfrentou_chefe == Não) // false
-(V) Jogador 3: (100 < 100) or (5 < 5) or (enfrentou_chefe == Sim) // true
-(V) Jogador 4: (101 != 100) or (4 != 5) or not(enfrentou_chefe == Não) // true
+
+
+player1Pts <- 99
+player3Pts <- 100
+player4Pts <- 101
+
+player1Coins <- 15
+player2Coins <- 200
+player3Coins <- 5
+player4Coins <- 4
+
+player1Boss <- verdadeiro
+player2Boss <- fals<-
+player3Boss <- verdadeiro
+player4Boss <- falso
+
+player1 <- (player1Pts >= 100) e (player1Coins >= 5) e (player1Boss == verdadeiro) // VERDADEIRO
+player2 <- (player2Pts >= 100) e (player2Coins >= 5) e (player1Boss == falso) // FALSO
+player3 <- (player3Pts < 100) ou (player3Coins <= 5) ou (player3Boss == verdadeiro) // VERDADEIRO
+player4 <- (player4Pts <> 100) ou (player4Coins <= 5) ou nao(player4Boss == falso) // VERDADEIRO
+
+(V)Jogador 1: (120 >= 100) and (15 >= 5) and (verdadeiro == verdadeiro)
+(F)Jogador 2: (99 >= 100) and (200 >= 5) and (falso == falso)
+(V) Jogador 3: (100 < 100) or (5 < 5) or (verdadeiro == verdadeiro)
+(V) Jogador 4: (101 != 100) or (4 != 5) or not(falso == falso) 
