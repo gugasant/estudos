@@ -1,7 +1,7 @@
 programa {
 	funcao inicio() {
-		caracter nome, endereco, cidade, pai, mae
-		inteiro idade, cpf, rg
+		caracter nome, endereco, cidade, pai, mae, cpf, rg
+		inteiro idade
 		real peso, renda
 		
 		escreva("Informe seu nome: ")
