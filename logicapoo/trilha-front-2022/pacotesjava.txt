@@ -1,0 +1,22 @@
+package br.com.bb.pessoas;
+
+	public class Cliente {
+		String nome;
+		String endereco;
+		...
+	}
+
+	public class Funcionario {
+		String nome;
+		...
+	}
+
+
+package com.bankofamerica.clients;
+
+	public class Client {
+		String name;
+		String adress;
+		String occupation;
+		...
+	}

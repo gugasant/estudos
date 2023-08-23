@@ -1,0 +1,38 @@
+Algoritmo "bubblesort"
+
+Var
+xval: vetor[1..10] de inteiro
+s, aux: inteiro
+troca: logico
+
+
+Inicio
+xval[1] <- 32
+xval[2] <- 13
+xval[3] <- 44
+xval[4] <- 27
+xval[5] <- 58
+xval[6] <- 60
+xval[7] <- 30
+xval[8] <- 70
+xval[9] <- 99
+xval[10] <- 80
+
+troca <- verdadeiro
+enquanto troca = verdadeiro faca
+	troca <- falso
+		para s de 1 ate 9 faca
+			se xval[s] > xval[s+1] entao
+				aux <- xval[s]
+				xval[s] <- xval[s+1]
+				xval[s+1] <- aux
+				troca <- verdadeiro
+			fimse
+		fimpara
+fimenquanto
+escreval("Sequencia")
+para s de 1 ate 10 faca
+   escreva(xval[s])
+fimpara
+
+Fimalgoritmo

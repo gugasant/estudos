@@ -1,0 +1,14 @@
+Pesquise sobre padrões de projeto e escolha um para apresentar e descrever o seu funcionamento. Além disso, explique quais as vantagens e desvantagens comparados a outros e mostre suas referências.
+
+
+Revealing Module Pattern:
+O Revealing Module Pattern, é uma das variações do Module Pattern, pode-se dizer que é uma versão ligeiramente melhorada. Ele surgiu da frustração com o fato de ter que se repetir o nome do objeto principal quando queríamos chamar um método público de outro ou acessar variáveis públicas. Também havia o requisito do Module Pattern ter que mudar para a notação literal de objeto para as coisas que se desejava tornar públicas. O resultado foi a atualização de um padrão onde definiríamos todas as nossas funções e variáveis no escopo privado e retornaríamos um objeto anônimo com "ponteiros" para a funcionalidade privada que desejamos revelar pública. Com a forma de implementação de módulos no ECMAScript 2015, o escopo das funções e variáveis definidas no módulo já é privado, também, usamos export e import para revelar o que é preciso.
+
+Vantagens: Esse padrão permite que a sintaxe dos scripts seja mais consistente, além de deixar mais claro no final do módulo quais das funções e variáveis podem ser acessadas publicamente, facilitando a legibilidade.
+
+Desvantagens: Se uma função privada se referir a uma função pública, essa função pública não poderá ser substituída se for necessário um patch. Isso ocorre porque a função privada continuará se referindo à implementação privada e o padrão não se aplica a membros públicos, apenas a funções. Membros de objetos públicos que se referem a variáveis ​​privadas também estão sujeitos a isso. Como resultado disso, os módulos criados com o Revealing Module Pattern podem ser mais frágeis do que aqueles criados com o Module Pattern original, portanto, deve-se ter cuidado durante o uso.
+
+Referências:
+http://jordankobellarz.github.io/javascript/2015/01/30/guia-rapido-de-padroes-de-projeto-javascript.html
+https://medium.com/@washingtonbr/padr%C3%B5es-de-projeto-e-boas-pr%C3%A1ticas-em-javascript-d3b49c5c61a5
+https://www.patterns.dev/posts/classic-design-patterns/

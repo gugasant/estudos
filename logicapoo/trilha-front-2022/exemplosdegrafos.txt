@@ -1,0 +1,2 @@
+Um exemplo de utilização de grafos, que é bastante presente em nosso dia a dia, é nas redes sociais. Independente da rede, o conjunto de nós e arestas permite a criação de uma rede, que busca demonstrar as conexões formadas entre as entidades, que são perfis, páginas, hashtags etc.
+Outro exemplo é na construção de uma aplicação de GPS, onde calculamos as melhores rotas para chegar no destino de nossa preferência, sejam rotas de carro por exemplo, nos grafos direcionados, ou a pé com os grafos não direcionados.
