@@ -1,0 +1,16 @@
+{
+  "name": "atividade1",
+  "version": "1.0.0",
+  "description": "teste atividade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "teste",
+    "node",
+    "npm"
+  ],
+  "author": "Gustavo",
+  "license": "ISC"
+}
