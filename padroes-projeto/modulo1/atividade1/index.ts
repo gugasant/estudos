@@ -1,11 +1,11 @@
 import { Creator } from "./models/creator";
-import { CriadorPc } from "./models/fabrica-pc";
-import { CriadorServer } from "./models/fabrica-server";
-import { PersonalComputer } from "./models/pc-concreto";
 
-function clientCode(criador: Creator) {
-  console.log(criador.toString())
-}
+const produto1 = Creator.fabricaDeComputador('PC')
+const produto2 = Creator.fabricaDeComputador('Server')
 
-clientCode(new CriadorPc())
-clientCode(new CriadorServer())
+console.log(produto1.toString())
+console.log(produto2.toString())
+
+//Erro previsto
+const produto3 = Creator.fabricaDeComputador('Outro')
+console.log(produto3.toString())
