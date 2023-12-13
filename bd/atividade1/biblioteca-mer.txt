@@ -1,0 +1,102 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema Biblioteca
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema Biblioteca
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `Biblioteca` ;
+USE `Biblioteca` ;
+
+-- -----------------------------------------------------
+-- Table `Biblioteca`.`Autor`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Biblioteca`.`Autor` (
+  `idAutor` INT NOT NULL AUTO_INCREMENT,
+  `Nome` VARCHAR(80) NULL,
+  PRIMARY KEY (`IdAutor`))
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `Biblioteca`.`Livro`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Biblioteca`.`Livro` (
+  `idLivro` INT NOT NULL AUTO_INCREMENT,
+  `Titulo` VARCHAR(100) NULL,
+  `Ano` INT NULL,
+  `Categoria` VARCHAR(45) NULL,
+  `Autor_idAutor` INT NOT NULL,
+  PRIMARY KEY (`idLivro`),
+  INDEX `fk_Livro_Autor_idx` (`Autor_idAutor` ASC) VISIBLE,
+  CONSTRAINT `fk_Livro_Autor`
+    FOREIGN KEY (`Autor_idAutor`)
+    REFERENCES `Biblioteca`.`Autor` (`idAutor`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `Biblioteca`.`Usuario`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Biblioteca`.`Usuario` (
+  `Cpf` VARCHAR(11) NOT NULL,
+  `Nome` VARCHAR(80) NULL,
+  `Telefone` VARCHAR(11) NULL,
+  `Rua` VARCHAR(100) NULL,
+  `Cidade` VARCHAR(45) NULL,
+  PRIMARY KEY (`Cpf`))
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `Biblioteca`.`Emprestimo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Biblioteca`.`Emprestimo` (
+  `idEmprestimo` INT NOT NULL AUTO_INCREMENT,
+  `Data` DATETIME NULL,
+  `Livro_idLivro` INT NOT NULL,
+  `Usuario_Cpf` VARCHAR(11) NOT NULL,
+  PRIMARY KEY (`idEmprestimo`),
+  INDEX `fk_Emprestimo_Livro1_idx` (`Livro_idLivro` ASC) VISIBLE,
+  INDEX `fk_Emprestimo_Usuario1_idx` (`Usuario_Cpf` ASC) VISIBLE,
+  CONSTRAINT `fk_Emprestimo_Livro1`
+    FOREIGN KEY (`Livro_idLivro`)
+    REFERENCES `Biblioteca`.`Livro` (`idLivro`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Emprestimo_Usuario1`
+    FOREIGN KEY (`Usuario_Cpf`)
+    REFERENCES `Biblioteca`.`Usuario` (`Cpf`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `Biblioteca`.`Devolucao`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Biblioteca`.`Devolucao` (
+  `idDevolucao` INT NOT NULL AUTO_INCREMENT,
+  `Data` DATETIME NULL,
+  `Usuario_Cpf` VARCHAR(11) NOT NULL,
+  `Livro_idLivro` INT NOT NULL,
+  PRIMARY KEY (`idDevolucao`),
+  INDEX `fk_Devolucao_Usuario1_idx` (`Usuario_Cpf` ASC) VISIBLE,
+  INDEX `fk_Devolucao_Livro1_idx` (`Livro_idLivro` ASC) VISIBLE,
+  CONSTRAINT `fk_Devolucao_Usuario1`
+    FOREIGN KEY (`Usuario_Cpf`)
+    REFERENCES `Biblioteca`.`Usuario` (`Cpf`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Devolucao_Livro1`
+    FOREIGN KEY (`Livro_idLivro`)
+    REFERENCES `Biblioteca`.`Livro` (`idLivro`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
