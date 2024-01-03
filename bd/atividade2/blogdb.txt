@@ -1,0 +1,39 @@
+CREATE DATABASE BlogDB;
+USE BlogDB;
+
+CREATE TABLE Autor (
+	IdAutor INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    NomeAutor VARCHAR(100)
+) ENGINE=InnoDB;
+
+CREATE TABLE Post (
+	IdPost INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Id_Autor INT NOT NULL,
+    Titulo VARCHAR(255),
+    Conteudo VARCHAR(255),
+    DataPublicacao DATE,
+    FOREIGN KEY (Id_Autor) REFERENCES Autor(IdAutor) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+CREATE TABLE Comentario (
+	IdComentario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Id_Autor INT NOT NULL,
+    Titulo VARCHAR(255),
+    TextoComentario VARCHAR(255),
+    DataComentario DATE,
+    FOREIGN KEY (Id_Autor) REFERENCES Autor(IdAutor) ON DELETE CASCADE 
+) ENGINE=InnoDB;
+
+
+INSERT INTO Autor (NomeAutor) VALUES ('João'), ('Maria');
+SELECT NomeAutor FROM Autor;
+
+INSERT INTO Post (Id_Autor ,Titulo, Conteudo, DataPublicacao) 
+VALUES (1, 'Titulo João', 'Conteudo João', '2024-01-03'), 
+(2, 'Titulo Maria', 'Conteudo Maria', '2024-01-03');
+SELECT * FROM Post;
+
+SELECT A.IdAutor, A.NomeAutor, P.Titulo, P.DataPublicacao
+FROM Autor A
+INNER JOIN Post P
+ON A.IdAutor = P.Id_Autor;
