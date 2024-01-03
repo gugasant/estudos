@@ -1,0 +1,23 @@
+create table Produtos (
+	ProdutoID INT AUTO_INCREMENT PRIMARY KEY,
+    NomeProduto VARCHAR(50),
+    Preco VARCHAR(50),
+    Estoque INT
+);
+
+INSERT INTO Produtos (NomeProduto, Preco, Estoque)
+VALUES ('Smartphone', '799,99', 20),
+('Tablet', '349,99', 10),
+('Fone de ouvido', '49,99', 50)
+
+UPDATE Produtos SET Estoque = 25, Preco = '849,99' WHERE ProdutoID = 1
+
+-- Vendas com DELETE
+DELETE FROM Produtos WHERE ProdutoID >= 2;
+INSERT INTO Produtos (NomeProduto, Preco, Estoque)
+VALUES ('Tablet', 349.99, 5), 
+('Fone de Ouvido', 49.99, 40);
+
+-- Vendas com UPDATE
+UPDATE Produtos SET Estoque = Estoque - 5 WHERE ProdutoID = 2;
+UPDATE Produtos SET Estoque = Estoque - 10 WHERE ProdutoID = 3;
