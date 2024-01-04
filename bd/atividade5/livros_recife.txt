@@ -1,0 +1,65 @@
+CREATE TABLE Autor (
+	AutorID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(45),
+    Nacionalidade VARCHAR(45)
+);
+
+CREATE TABLE Livros (
+	LivroID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Titulo VARCHAR(45),
+    AnoPublicacao VARCHAR(45),
+    Autor_ID INT NOT NULL,
+    FOREIGN KEY (Autor_ID) REFERENCES Autor(AutorID) ON DELETE CASCADE
+);
+
+-- Criando as tabelas
+
+--------------------------------------------------------------------------------------------------------------
+
+INSERT INTO Autor (Nome, Nacionalidade)
+VALUES ('Eduardo Galeano', 'Uruguai');
+
+-- Inserindo Autores na tabela autor
+
+INSERT INTO Livros (Titulo, AnoPublicacao, Autor_ID)
+VALUES ('O alienista', '1882', 1);
+
+-- Inserindo Livros na tabela livros
+
+SELECT *
+FROM Autores;
+
+-- Consultando todos os autores
+
+SELECT *
+FROM Livros;
+
+-- Consultando todos os livros
+
+SELECT Livros.LivroID, Autor.Nome AS Autor, Livros.Titulo, Livros.AnoPublicacao
+FROM livros
+INNER JOIN Autor ON Livros.Autor_ID=Autor.AutorID;
+
+-- Consulta dos livros mostrando as informações com o autor
+
+SELECT Autor.Nome, Livros.LivroID, Livros.Titulo, Livros.AnoPublicacao
+FROM Autor
+LEFT JOIN Livros ON Autor.AutorID = Livros.Autor_ID
+ORDER BY Autor.Nome;
+
+-- Consulta dos autores mostrando os livros, id dos livros, titulo e ano de publicacao
+
+SELECT Autor.Nome, Autor.Nacionalidade, Livros.Titulo, Livros.AnoPublicacao
+FROM Autor
+LEFT JOIN Livros ON Autor.AutorID = Livros.Autor_ID
+WHERE Nacionalidade = 'Brasil'
+ORDER BY Autor.Nome;
+
+-- Consulta dos autores brasileiros e informações de seus livros
+
+SELECT Autor.Nome, COUNT(Livros.Titulo) AS QTD_Livros
+FROM Autor
+LEFT JOIN Livros ON Autor.AutorID = Livros.Autor_ID
+GROUP BY Autor.Nome;
+
+-- Consulta dos autores e a quantidade de livros escritos por eles na tabela livros
