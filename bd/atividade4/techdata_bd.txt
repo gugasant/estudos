@@ -1,0 +1,82 @@
+------------------------------------------------------------------------------------------------------------------
+
+SELECT *
+FROM Transacoes;
+
+-- Seleciona todos os dados da tabela Transacoes
+
+------------------------------------------------------------------------------------------------------------------
+
+SELECT ID AS ID_Transacao, Data AS Data_Transacao, Valor AS Valor_Transacao
+FROM Transacoes;
+
+-- Seleciona 3 colunas da tabela Transacoes e as mostra como Alias para facilitar entendimento
+
+------------------------------------------------------------------------------------------------------------------
+
+SELECT ID AS ID_Transacao
+FROM Transacoes
+WHERE Valor > 100;
+
+-- Seleciona apenas as transações com valor superior a 100
+
+------------------------------------------------------------------------------------------------------------------
+SELECT ID AS ID_Transacao
+FROM Transacoes
+ORDER BY Valor DESC;
+
+-- Seleciona as transações e as ordena pelo valor de forma decrescente
+
+------------------------------------------------------------------------------------------------------------------
+
+SELECT AVG(Valor) AS Media_Valor
+FROM Transacoes;
+
+-- Calcula a média dos valores de todas as transações
+
+
+SELECT MAX(Valor) AS Valor_Maximo
+FROM Transacoes;
+
+-- Mostra a transação com o maior valor
+
+
+SELECT MIN(Valor) AS Valor_minimo
+FROM Transacoes;
+
+-- Mostra a transação com o menor valor
+
+SELECT COUNT(ID) AS Total_Transacoes
+FROM Transacoes;
+
+-- Mostra o número total de transações realizadas
+------------------------------------------------------------------------------------------------------------------
+
+SELECT Produto, AVG(Valor) AS Media_Transacoes
+FROM Transacoes
+GROUP BY Produto;
+
+-- Mostra a média de valor para cada produto vendido e agrupa
+------------------------------------------------------------------------------------------------------------------
+
+SELECT COUNT(Produto) AS QTD_Produtos, SUM(Valor) AS Total_vendas, AVG(Valor) AS Media_Valor
+FROM Transacoes
+ORDER BY Categoria_Produto;
+
+-- Mostra a Quantidade de produtos, soma dos valores e média dos valores agrupados pela categoria do produto
+
+------------------------------------------------------------------------------------------------------------------
+
+A tabela Transacoes possui as as colunas:
+ID - onde são armazenados os identificadores de cada transação/venda;
+Data - a data em que a transação/venda foi feita;
+Valor - o valor da transação/venda;
+Produto - o produto que foi vendido;
+Categoria_Produto - a categoria em que um produto está inserido;
+
+
+
+
+
+
+
